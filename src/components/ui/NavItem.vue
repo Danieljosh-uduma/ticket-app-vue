@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router'
 const prop = defineProps<{
   title: string
   url: string
-  icon: VNode
+  icon: defineComponent<VNode>
 }>()
 </script>
 
@@ -19,4 +19,4 @@ const prop = defineProps<{
       {{ prop.title }}
     </RouterLink>
   </li>
-</template>
+</template>defineComponent,
