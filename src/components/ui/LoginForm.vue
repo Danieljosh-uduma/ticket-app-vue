@@ -97,8 +97,8 @@ const validatePassword = () => {
         placeholder="Johndoe@email.com"
         :value="email"
         @input="
-          (event: { target: { value: any } }) => {
-            email = event.target.value
+          (event: Event) => {
+            email = (event.target as HTMLInputElement)?.value
             validateEmail()
           }
         "
@@ -118,8 +118,8 @@ const validatePassword = () => {
         placeholder="******"
         :value="password"
         @input="
-          (event: { target: { value: any } }) => {
-            password = event.target.value
+          (event: Event) => {
+            password = (event.target as HTMLInputElement)?.value
             validatePassword()
           }
         "

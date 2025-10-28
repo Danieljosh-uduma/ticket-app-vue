@@ -134,8 +134,8 @@ const validatePassword = () => {
         placeholder="John Doe"
         :value="fullname"
         @input="
-          (event: { target: { value: any } }) => {
-            fullname = event.target.value
+          (event: Event) => {
+            fullname = (event.target as HTMLInputElement)?.value
             validateFullname()
           }
         "
@@ -154,8 +154,8 @@ const validatePassword = () => {
         placeholder="Johndoe@email.com"
         :value="email"
         @input="
-          (event: { target: { value: any } }) => {
-            email = event.target.value
+          (event: Event) => {
+            email = (event.target as HTMLInputElement)?.value
             validateEmail()
           }
         "
@@ -175,8 +175,8 @@ const validatePassword = () => {
         placeholder="080242637322"
         :value="phoneNumber"
         @input="
-          (event: { target: { value: any } }) => {
-            phoneNumber = event.target.value
+          (event: Event) => {
+            phoneNumber = (event.target as HTMLInputElement)?.value
             validatePhoneNumber()
           }
         "
@@ -195,8 +195,8 @@ const validatePassword = () => {
         placeholder="******"
         :value="password"
         @input="
-          (event: { target: { value: any } }) => {
-            password = event.target.value
+          (event: Event) => {
+            password = (event.target as HTMLInputElement)?.value
             validatePassword()
           }
         "

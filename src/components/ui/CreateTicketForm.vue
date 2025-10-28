@@ -146,8 +146,8 @@ onMounted(getTicket)
               placeholder="Todo or Task"
               :value="title"
               @input="
-                (event: { target: { value: any } }) => {
-                  title = event.target.value
+                (event: Event) => {
+                  title = (event.target as HTMLInputElement)?.value
                   validateTitle()
                 }
               "
@@ -167,8 +167,8 @@ onMounted(getTicket)
               placeholder="Open"
               :value="stat"
               @input="
-                (event: { target: { value: any } }) => {
-                  stat = event.target.value
+                (event: Event) => {
+                  stat = (event.target as HTMLInputElement)?.value
                   validateStat()
                 }
               "
@@ -187,8 +187,8 @@ onMounted(getTicket)
               placeholder="high"
               :value="priority"
               @input="
-                (event: { target: { value: any } }) => {
-                  priority = event.target.value
+                (event: Event) => {
+                  priority = (event.target as HTMLInputElement)?.value
                   validatePriority()
                 }
               "
@@ -204,8 +204,8 @@ onMounted(getTicket)
               placeholder="decsribe your thought"
               :value="description"
               @input="
-                (event: { target: { value: any } }) => {
-                  description = event.target.value
+                (event: Event) => {
+                  description = (event.target as HTMLInputElement)?.value
                   validateDescription()
                 }
               "
