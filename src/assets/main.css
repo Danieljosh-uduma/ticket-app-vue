@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Bricolage;
+    src: url(./Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf);
+  }
+
+@theme {
+  --color-black: #001825;
+  --color-white: #f9f9f9;
+}
+@layer components{
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl/snug font-bold mb-4
+  }
+  h2 {
+    @apply text-5xl/snug
+  }
+  h3 {
+    @apply text-4xl/snug
+  }
+
+  body {
+    /* font-family: "Roboto", sans-serif; */
+    font-family: Bricolage, sans-serif;
+    color: #001825;
+    background-color: #f9f9f9;
+  }
+  #app {
+    @apply max-w-[1440px] mx-auto
+  }
+
+}
