@@ -13,7 +13,7 @@ export type ticketType = {
 }
 
 export type ticket = {
-  id: number
+  id: string
   title: string
   description: string
   priority: string
