@@ -52,7 +52,7 @@ onMounted(getData)
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <RecentCard
         v-for="ticket in tickets"
-        :key="ticket.id"
+        :key="String(ticket.id)"
         :id="ticket.id"
         :title="ticket.title"
         :description="ticket.description"
