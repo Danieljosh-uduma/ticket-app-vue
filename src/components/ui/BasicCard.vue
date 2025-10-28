@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { VNode } from 'vue'
+import type { Component } from 'vue'
 
 const prop = defineProps<{
   title: string
   description: string
-  icon: VNode
+  icon: Component
 }>()
 </script>
 

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { VNode } from 'vue'
+import type { Component } from 'vue';
 import { RouterLink } from 'vue-router'
 
 const prop = defineProps<{
   title: string
   url: string
-  icon: defineComponent<VNode>
+  icon: Component
 }>()
 </script>
 
@@ -19,4 +19,4 @@ const prop = defineProps<{
       {{ prop.title }}
     </RouterLink>
   </li>
-</template>defineComponent,
+</template>
