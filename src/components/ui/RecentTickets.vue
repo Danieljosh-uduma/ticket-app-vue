@@ -24,7 +24,7 @@ onMounted(getData)
         <RecentCard
           v-for="ticket in tickets.reverse().slice(0, 3)"
           :key="ticket.id"
-          :id="ticket.id"
+          :id="String(ticket.id)"
           :title="ticket.title"
           :description="ticket.description"
           :priority="ticket.priority"
