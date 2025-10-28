@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const prop = defineProps<{
   title: string
-  value: string
+  value: number
   textColor: string
 }>()
 const className = `text-4xl font-bold ${prop.textColor}`
