@@ -10,7 +10,7 @@ const prop = defineProps<{
 
 <template>
   <figure :class="prop.class" @click="prop.click">
-    <img :src="prop.src" :alt="prop.alt" className="w-full h-full object-fit" />
+    <img :src="prop.src" :alt="prop.alt" class="w-full h-full object-fit" />
     <figcaption v-if="prop.caption">{{ prop.caption }}</figcaption>
   </figure>
 </template>
