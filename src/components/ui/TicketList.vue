@@ -58,7 +58,7 @@ onMounted(getData)
         :description="ticket.description"
         :priority="ticket.priority"
         :status="ticket.status"
-        :func="() => editTicket(ticket.id)"
+        :func="() => editTicket(String(ticket.id))"
       />
 
       <CreateTicketForm :key="id" :closeModal="() => editShow(false)" v-if="show" :id="id" />
