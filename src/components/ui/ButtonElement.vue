@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { VNode } from 'vue'
+import type { Component } from 'vue'
 
 const prop = defineProps<{
   class?: string
   type: 'button' | 'submit' | 'reset'
   click?: () => void
   text: string
-  icon?: VNode
+  icon?: Component
 }>()
 </script>
 
